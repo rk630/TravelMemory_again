@@ -33,19 +33,5 @@
 
 - If the reverse proxy setup for the frontend is done successfully, this is how the frontend application with the subdomain looks.
 ![Screenshot (28)](https://github.com/rk630/TravelMemory_again/assets/139606316/53831179-2088-4493-be12-0082a86f3041)
-### Scaling the Application
-To scale the application, we need to create multiple instances with the same configurations by creating the snapshots of the frontend and backend application.
-We need to create the AMI and launch new instances using the AMI.
 
-We need to create a load balancer to ensure the efficiency of incoming traffic.
-Create the application load balancers by specifying the instances into their respective target groups.
-
-
-### Domain Setup with CloudFlare
-Connect your custom domain to the application using Cloudflare.
-Create a CNAME record pointing to the load balancer endpoint of the backend.
-Create an A record with the IP address of the EC2 instance hosting the frontend.
-
-
-### Successful Deployment
 
